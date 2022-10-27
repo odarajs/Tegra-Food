@@ -1,9 +1,6 @@
 # Tegra-Food 
 
 <h1 aling="center">ProcessoSeletivo-Tegra</h1>
-<p>
- <img src="index/img/ezgif.com-gif-maker.webp">
-</p>
 <h2 aling="center">Sobre o projeto</h2>
 http://tegrafood.netlify.app
 
