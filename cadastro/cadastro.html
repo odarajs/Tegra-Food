@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <img src="../assets/14edc6e22f5cf1f130e7efac6ddb6394.jpg" alt="" srcset="">
+        <a href="../login/login.html"><i class="arrow"><i class="fa-solid fa-arrow-left"></i></a> 
+    </header>
+    <div class="login">
+        <div class="apresentacao">
+        <h1>Vamos começar!</h1>
+        <span>Crie uma nova conta</span>
+    </div>
+    <br>
+    <div class="inputs">
+        <input type="text" placeholder="Seu Email">
+        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <div class="inputs">
+        <input type="text" placeholder="Nome completo">
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+        <div class="inputs">
+            <input type="text" placeholder="senha">
+            <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+        </div>    
+      <div class="inputs">
+        <input type="text" placeholder="Confime a senha">
+        <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+
+        <button type="submit">Entrar</button>
+        </div>
+        <h5>Já tem uma conta? <span><a href="../login/login.html">Entrar</a></span></h5>
+    </div>
+         </div>
+
+         <style>
+            *{
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    overflow-x:hidden;
+}
+header{
+    margin: 0;
+    position: static;
+}
+header img{
+    width: 480px;
+    height: 720px;
+}
+/* parte dos inputs */
+input[type="text"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 4px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.inputs input[type="text"] {
+  padding-left: 40px;
+}
+
+.inputs {
+  position: relative;
+}
+
+.inputs i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+.inputs input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+.input.inputIconBg i {
+  background-color: #aaa;
+  color: #fff;
+  padding: 9px 4px;
+  border-radius: 4px 0 0 4px;
+}
+.inputs.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+.inputs.inputIconBg input[type="text"]:focus + i {
+  color: #fff;
+  background-color: dodgerBlue;
+}
+
+
+/* configurando os espaçamento do input e tamanho */
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.login > .apresentacao > span{
+    display: block;
+    margin-top: 26px;
+    text-align: center;
+    color: #9098B1;
+    font-weight: 400;
+}
+.login > .apresentacao > h1{
+    text-align: center;
+    color: #223263;
+}
+.login{
+    margin-top: 100px;
+}
+.inputs > input{
+    width: 21.438em;
+    height: 3em;
+    border-radius: 5px;
+    border: 1px solid #EBF0FF;
+}
+.inputs > button{
+    display: flex;
+    width: 21.438em;
+    height: 3.5625em;
+    background: #DC9000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #9098B1;
+    font-weight: 700;
+    padding-right: 30px;
+}
+
+h5{
+    margin-top: 18px;
+    text-align: center;
+    color: #9098B1;
+    font-weight: 400;
+    font-size: 12px;
+}
+h5 > span > a{
+    color: #40BFFF;
+    font-weight: 700;
+    text-decoration: none;
+}
+.img-input{
+    width: 20px;
+    margin-left: 30px;
+}
+.inputs  input[type="email"]:focus + img{
+    color: dodgerBlue;
+}
+.fa-arrow-left{
+    position: relative;
+    bottom: 93%;
+    left: 3%;
+    font-size: 24px;
+    color: black;
+
+}
+
+         </style>
+</body>
+</html>

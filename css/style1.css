@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+:root {
+  --vermelho: #6a0000;
+  --amarelo: #dc9000;
+  --azul: #223263;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+
+  outline: 0px;
+}
+body {
+  overflow-x: hidden;
+}
+#navbar-3 {
+  height: 12.17vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+
+  /*position: fixed;
+    top: 0;
+    left: 0;
+    margin-bottom: 1vh; */
+
+  background-color: var(--amarelo);
+
+  user-select: none;
+}
+
+#navbarFunctions-4 {
+  margin-right: 3vw;
+  display: flex;
+  gap: 38px;
+  justify-content: center;
+  align-items: center;
+}
+.iconButton {
+  background-color: transparent;
+  border: none;
+}
+.iconButton i {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+#notifCont {
+  height: 8.6vh;
+  width: 42vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 1vh;
+  left: 0vh;
+  z-index: 5;
+  margin-left: 25%;
+}
+#not {
+  height: 100%;
+  width: 90%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1vh 3vw;
+
+  border-radius: 6px;
+
+  background-color: var(--azul);
+}
+.notText {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#btnIrAoCarrinho {
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+
+  color: var(--amarelo);
+  cursor: pointer;
+}
+#cardContainer {
+  width: 90vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3vh;
+
+  margin-bottom: 3vh;
+}
+#listingFunctions-visivel {
+  width: 70%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-left: 23%;
+  margin-bottom: 2vh;
+  margin-top: 12vh;
+}
+#sectionDiv-13 {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+}
+.titulo-14 {
+  color: var(--azul);
+  font-size: 32px;
+  font-weight: 700;
+}
+#cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3vh;
+}
+.delete {
+  background: transparent;
+  border: none;
+  margin-top: -100px;
+  font-size: 32px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.delete i {
+  color: var(--azul);
+  margin-left: 90vw;
+}
+/* Estrutura de card de produto */
+
+.card {
+  height: 19.48vh;
+  width: 70.5%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding-left: 1vw;
+  box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+
+  overflow: none;
+}
+.imageCropper-17 {
+  width: 30%;
+  max-width: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  border-radius: 50%;
+
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.imgCard-18 {
+  width: 100%;
+  max-width: 80px;
+  height: 80px;
+
+  display: inline;
+
+  margin: 0 auto;
+}
+.descricaoContainer {
+  width: 40vw;
+}
+.nomeProduto {
+  color: var(--azul);
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  margin-left: 5%;
+}
+.descricaoProduto {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 5%;
+}
+.precoContainer {
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.precoProduto {
+  color: var(--azul);
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.qntdComprar {
+  height: 7.5vh;
+  width: 6.98vw;
+
+  color: white;
+  font-weight: 500;
+
+  background-color: var(--amarelo);
+  border: 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 20px;
+}
+#secaoFimPedido {
+  height: auto;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4vh;
+  margin-left: 3%;
+  flex-wrap: wrap;
+}
+#cuponsDiv {
+  height: 15vh;
+  width: 51%;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 3px 3px 8px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+
+  overflow: none;
+}
+#inputCupomSection {
+  height: 50%;
+  width: 45%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#inputCupom {
+  height: 100%;
+  width: 100%;
+
+  padding-left: 1vw;
+  padding-right: 20%;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+}
+#btnAddCupom {
+  height: 7.61vh;
+  width: 18.29vw;
+
+  color: white;
+  font-weight: 500;
+
+  background-color: var(--amarelo);
+
+  border: 0px;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+#tabelaTotal {
+  height: 24.65vh;
+  width: 29.7vw;
+
+  margin-right: -50%;
+
+  border-spacing: 0px;
+}
+.rowTabela > th {
+  border: 0.25px solid rgba(0, 0, 0, 0.5);
+}
+.subtotaltexto,
+.entregatexto,
+.totaltexto {
+  display: flex;
+  color: #000000;
+  font-weight: 700;
+  font-size: 12px;
+  height: 8.21vh;
+  text-align: center;
+  align-items: center;
+  border-radius: 6px 0px 0px 6px;
+}
+#subTotal,
+#btnCalcularEntrega,
+#total {
+  width: 13.23vw;
+  border-radius: 0px 6px 6px 0px;
+}
+#btnCalcularEntrega {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 700;
+}
+#subTotal,
+#total {
+  color: var(--azul);
+  font-weight: 700;
+  font-size: 20px;
+}
+#userOptions {
+  height: 9vh;
+  width: 85%;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5vh;
+  padding-top: 15%;
+}
+#btnEscolherMais {
+  color: var(--azul);
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+#mainContent {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#btnFinalizarPedido {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 6px;
+  gap: 10px;
+  width: 16.17vw;
+  height: 9vh;
+  background-color: var(--amarelo);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+#btnFinalizarPedido i {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 951px) {
+  .card {
+    height: auto;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .botaoComprar {
+    width: auto;
+  }
+  #secaoFimPedido {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  #cuponsDiv {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .delete i {
+    color: var(--azul);
+    margin-left: 0px;
+    margin-top: 120px;
+  }
+}
