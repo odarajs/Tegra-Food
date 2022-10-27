@@ -1,6 +1,4 @@
 # Tegra-Food 
-
-<h1 aling="center">ProcessoSeletivo-Tegra</h1>
 <h2 aling="center">Sobre o projeto</h2>
 http://tegrafood.netlify.app
 
