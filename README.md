@@ -1,2 +1,2 @@
 # Tegra-Food
-<p>tegrafood.netlify.app<p>
+<p>http://tegrafood.netlify.app<p>
